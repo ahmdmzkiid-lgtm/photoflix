@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { CaretDown, Question } from "@phosphor-icons/react";
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -75,22 +75,18 @@ function FAQItem({ item }: { item: (typeof FAQ_ITEMS)[0] }) {
         />
       </button>
 
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            key="answer"
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="overflow-hidden"
-          >
-            <p className="px-6 pb-5 text-on-surface-variant text-sm leading-relaxed font-manrope">
-              {item.answer}
-            </p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Modern, high-performance CSS Grid Accordion */}
+      <div
+        className={`grid transition-all duration-200 ease-in-out ${
+          open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <p className="px-6 pb-5 text-on-surface-variant text-sm leading-relaxed font-manrope">
+            {item.answer}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

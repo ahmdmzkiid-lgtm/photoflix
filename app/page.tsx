@@ -8,6 +8,7 @@ import { HowItWorks } from "@/components/HowItWorks";
 import { FAQ } from "@/components/FAQ";
 import { PreBookingForm } from "@/components/PreBookingForm";
 import { Footer } from "@/components/Footer";
+import { ShutterPreloader } from "@/components/ShutterPreloader";
 
 /**
  * Photoflix Landing Page
@@ -29,6 +30,7 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <>
+      <ShutterPreloader />
       <Header />
       <main>
         <Hero />

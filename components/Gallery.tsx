@@ -6,28 +6,28 @@ import { Camera, Aperture, Sparkle } from "@phosphor-icons/react";
 
 const PHOTO_ITEMS = [
   {
-    src: "/gallery/laughing_couple_bw.png",
+    src: "/gallery/laughing_couple_bw.jpg",
     alt: "Wedding Couple Laughing B&W",
     title: "Rian & Wulan Wedding",
     tag: "Wedding",
     rotate: -4,
   },
   {
-    src: "/gallery/friends_color.png",
+    src: "/gallery/friends_color.jpg",
     alt: "Friends making funny faces",
     title: "Anya's Sweet 17th Party",
     tag: "Birthday",
     rotate: 3,
   },
   {
-    src: "/gallery/corporate_gala.png",
+    src: "/gallery/corporate_gala.jpg",
     alt: "Corporate colleagues smiling",
     title: "Mandiri Gala Celebration",
     tag: "Corporate",
     rotate: -2,
   },
   {
-    src: "/gallery/wedding_bw.png",
+    src: "/gallery/wedding_bw.jpg",
     alt: "Glamorous guest photo strip",
     title: "Vicky & Jessica Ceremony",
     tag: "Wedding",
