@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   Design System: "Photoflix Cinematic"  —  Photoflix Photo Booth
+   Tailwind CSS v4 CSS-first configuration with @theme + @utility
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+/* ─── @theme: Design Tokens ────────────────────────────────────────────────── */
+@theme {
+  /* Cinematic midnight theme colors */
+  --color-background: #041426;
+  --color-surface: #041426;
+  --color-surface-dim: #041426;
+  --color-surface-bright: #2b3a4e;
+  --color-surface-container-lowest: #010f21;
+  --color-surface-container-low: #0c1c2f;
+  --color-surface-container: #112033;
+  --color-surface-container-high: #1c2b3e;
+  --color-surface-container-highest: #273649;
+  
+  --color-primary: #bac7df;
+  --color-primary-container: #0f1c2e;
+  --color-on-primary: #243144;
+  --color-on-primary-container: #78849b;
+  
+  --color-secondary: #e9c349;
+  --color-secondary-container: #af8d11;
+  --color-secondary-fixed: #ffe088;
+  --color-secondary-fixed-dim: #e9c349;
+  --color-on-secondary: #3c2f00;
+  --color-on-secondary-container: #342800;
+  
+  --color-on-background: #d4e3fd;
+  --color-on-surface: #d4e3fd;
+  --color-on-surface-variant: #c5c6cd;
+  
+  --color-outline: #8f9097;
+  --color-outline-variant: #44474c;
+  
+  /* Compatible aliases for existing templates */
+  --color-midnight: #041426;
+  --color-midnight-dark: #010f21;
+  --color-midnight-light: #1c2b3e;
+  --color-accent: #e9c349;
+  --color-accent-soft: #ffe088;
+
+  /* Spacing */
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 64px;
+  --spacing-container-max: 1440px;
+  --spacing-gutter: 24px;
+
+  /* Typography */
+  --font-caslon: var(--font-caslon), "Libre Caslon Text", Georgia, serif;
+  --font-manrope: var(--font-manrope), "Manrope", sans-serif;
+  
+  --font-heading: var(--font-caslon);
+  --font-body:    var(--font-manrope);
+}
+
+/* ─── @utility: Custom utility classes ─────────────────────────────────────── */
+@utility font-heading {
+  font-family: var(--font-heading);
+}
+
+@utility font-body-md {
+  font-family: var(--font-body);
+}
+
+@utility hero-overlay {
+  background: linear-gradient(
+    160deg,
+    rgba(4, 20, 38, 0.90) 0%,
+    rgba(12, 28, 47, 0.75) 60%,
+    rgba(1, 15, 33, 0.50) 100%
+  );
+}
+
+@utility glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@utility doodle-watermark {
+  position: absolute;
+  opacity: 0.03;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ─── Base styles ───────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth scroll offset for sticky header */
+[id] {
+  scroll-margin-top: 80px;
+}
+
+/* ─── Film Strip Effect ─────────────────────────────────────────────────────── */
+.film-strip {
+    background-color: white;
+    padding: 8px 8px 24px 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.15);
+    transform: rotate(-2deg);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+.film-strip:nth-child(even) {
+    transform: rotate(2deg);
+}
+.film-strip:hover {
+    transform: rotate(0deg) scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.film-sprocket {
+    width: 8px;
+    height: 12px;
+    background-color: #041426;
+    margin-bottom: 4px;
+    border-radius: 1px;
+}
+.sprocket-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 4px;
+}
+
+/* ─── Grain texture overlay ─────────────────────────────────────────────────── */
+.texture-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 50;
+}
+
+/* ─── Scrollbar (subtle, themed) ────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container-lowest);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-surface-container-high);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* ─── Focus ring ─────────────────────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
+/* ─── Selection ──────────────────────────────────────────────────────────────── */
+::selection {
+  background: var(--color-secondary);
+  color: var(--color-on-secondary);
+}
