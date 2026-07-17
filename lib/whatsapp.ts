@@ -32,8 +32,8 @@ export const WA_MESSAGES = {
   paket3Jam: (tanggal?: string) =>
     `Halo Photoflix! Saya ingin memesan *Paket 3 Jam*${tanggal ? ` untuk acara pada ${tanggal}` : ""}. Mohon informasikan ketersediaannya. Terima kasih!`,
 
-  paketCustom: () =>
-    `Halo Photoflix! Saya tertarik dengan *Paket Custom* dan ingin mendiskusikan kebutuhan acara saya secara lebih detail. Boleh kita ngobrol lebih lanjut?`,
+  paket3JamPlus: (tanggal?: string) =>
+    `Halo Photoflix! Saya ingin memesan *Paket 3 Jam +*${tanggal ? ` untuk acara pada ${tanggal}` : ""}. Mohon informasikan ketersediaannya. Terima kasih!`,
 
   /** Pre-booking form — all fields composed into one message */
   preBooking: (data: {

@@ -20,7 +20,7 @@ const JENIS_ACARA_OPTIONS = [
 const PAKET_OPTIONS = [
   "Paket 2 Jam",
   "Paket 3 Jam",
-  "Paket Custom",
+  "Paket 3 Jam +",
   "Belum tahu / Minta rekomendasi",
 ];
 

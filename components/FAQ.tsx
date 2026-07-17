@@ -42,7 +42,7 @@ const FAQ_ITEMS = [
     id: "faq-6",
     question: "Berapa lama waktu yang dibutuhkan untuk setup?",
     answer:
-      "Umumnya tim kami tiba 1–1.5 jam sebelum acara untuk proses setup. Waktu setup sekitar 45–60 menit tergantung kompleksitas dekorasi. Pastikan ada ruang minimal 2x2 meter untuk penempatan booth.",
+      "Umumnya tim kami tiba 1–1.5 jam sebelum acara untuk proses setup. Waktu setup sekitar 45–60 menit tergantung kompleksitas dekorasi. Pastikan ada ruang minimal 3x2 meter untuk penempatan booth.",
   },
 ];
 

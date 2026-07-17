@@ -35,7 +35,7 @@ export function Header() {
             : "bg-background border-secondary-container/30"
         }`}
       >
-        <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+        <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-2.5 md:py-3 max-w-container-max mx-auto">
           {/* Logo */}
           <a
             href="#home"
@@ -47,7 +47,7 @@ export function Header() {
               alt="Photoflix Photobooth"
               width={240}
               height={68}
-              className="h-14 md:h-16 w-auto object-contain brightness-0 invert drop-shadow-[0_0_8px_rgba(233,195,73,0.5)] transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_14px_rgba(233,195,73,0.7)]"
+              className="h-18 md:h-22 w-auto object-contain brightness-0 invert drop-shadow-[0_0_8px_rgba(233,195,73,0.5)] transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_14px_rgba(233,195,73,0.7)]"
               priority
             />
           </a>
@@ -114,7 +114,7 @@ export function Header() {
                 alt="Photoflix Photobooth"
                 width={150}
                 height={42}
-                className="h-9 w-auto object-contain brightness-0 invert drop-shadow-[0_0_8px_rgba(233,195,73,0.5)]"
+                className="h-12 w-auto object-contain brightness-0 invert drop-shadow-[0_0_8px_rgba(233,195,73,0.5)]"
               />
             </span>
             <button

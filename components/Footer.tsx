@@ -155,16 +155,15 @@ export function Footer() {
                   </a>
                 </div>
               </li>
-              {/* TODO: Ganti dengan email asli Photoflix */}
               <li className="flex items-start gap-3">
                 <EnvelopeSimple size={18} weight="duotone" className="text-[#F2A65A] flex-shrink-0 mt-0.5" />
                 <div>
                   <p className="text-sm text-white/70">Email</p>
                   <a
-                    href="mailto:halo@photoflix.id"
+                    href="mailto:photoflix25@gmail.com"
                     className="text-sm text-white hover:text-[#F2A65A] transition-colors font-medium"
                   >
-                    halo@photoflix.id
+                    photoflix25@gmail.com
                   </a>
                 </div>
               </li>

@@ -63,6 +63,7 @@ const eventTags = [
   "Gathering",
   "Corporate Event",
   "Wisuda",
+  "Lainnya",
 ];
 
 /* ─── Component ────────────────────────────────────────────────────────────── */
@@ -146,9 +147,9 @@ export function OurStory() {
           variants={fadeUpVariants}
           className="font-heading text-3xl sm:text-4xl md:text-5xl text-on-surface leading-snug tracking-tight mb-8"
         >
-          Photoflix Photobooth siap bikin setiap momen diacara kamu jadi makin{" "}
-          <span className="text-secondary italic">pecah</span> &amp;{" "}
-          <span className="text-secondary italic">unforgottable</span>
+          Photoflix Photobooth siap bikin setiap momen diacara anda jadi makin{" "}
+          <span className="text-secondary italic">meriah</span> &amp;{" "}
+          <span className="text-secondary italic">unforgettable</span>
         </motion.h2>
 
         {/* ── Description paragraph ── */}
@@ -157,7 +158,7 @@ export function OurStory() {
           className="font-manrope text-base md:text-lg text-on-surface-variant max-w-2xl leading-relaxed mb-10"
         >
           Mau ulang tahun, Wedding, Gathering, Corporate event, Wisuda atau
-          acara lainnya? Tenang kita siap meramaikan acara kamu diseluruh area
+          acara lainnya? Tenang kita siap meramaikan acara anda diseluruh area
           Jabodetabek
         </motion.p>
 

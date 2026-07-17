@@ -105,7 +105,7 @@ export function Hero() {
           <div className="flex flex-col gap-2.5">
             <div className="w-32 h-24 relative overflow-hidden border border-neutral-200">
               <Image
-                src="/gallery/wedding_bw.jpg"
+                src="/gallery/1.webp"
                 alt="Wedding Black and White Booth"
                 fill
                 sizes="128px"
@@ -114,7 +114,7 @@ export function Hero() {
             </div>
             <div className="w-32 h-24 relative overflow-hidden border border-neutral-200">
               <Image
-                src="/gallery/wedding_bw.jpg"
+                src="/gallery/2.webp"
                 alt="Wedding B&W laugh"
                 fill
                 sizes="128px"
@@ -123,7 +123,7 @@ export function Hero() {
             </div>
             <div className="w-32 h-24 relative overflow-hidden border border-neutral-200">
               <Image
-                src="/gallery/wedding_bw.jpg"
+                src="/gallery/3.webp"
                 alt="Wedding kiss strip"
                 fill
                 sizes="128px"
@@ -156,7 +156,7 @@ export function Hero() {
           <div className="flex flex-col gap-2.5">
             <div className="w-32 h-24 relative overflow-hidden border border-neutral-200">
               <Image
-                src="/gallery/friends_color.jpg"
+                src="/gallery/4.webp"
                 alt="Friends colorful photo booth"
                 fill
                 sizes="128px"
@@ -165,7 +165,7 @@ export function Hero() {
             </div>
             <div className="w-32 h-24 relative overflow-hidden border border-neutral-200">
               <Image
-                src="/gallery/friends_color.jpg"
+                src="/gallery/5.webp"
                 alt="Friends funny faces"
                 fill
                 sizes="128px"
@@ -174,7 +174,7 @@ export function Hero() {
             </div>
             <div className="w-32 h-24 relative overflow-hidden border border-neutral-200">
               <Image
-                src="/gallery/friends_color.jpg"
+                src="/gallery/6.webp"
                 alt="Friends celebrating"
                 fill
                 sizes="128px"
@@ -207,7 +207,7 @@ export function Hero() {
           <div className="flex flex-col gap-2.5">
             <div className="w-32 h-24 relative overflow-hidden border border-neutral-200">
               <Image
-                src="/gallery/corporate_gala.jpg"
+                src="/gallery/7.webp"
                 alt="Corporate gala elegant couple"
                 fill
                 sizes="128px"
@@ -216,7 +216,7 @@ export function Hero() {
             </div>
             <div className="w-32 h-24 relative overflow-hidden border border-neutral-200">
               <Image
-                src="/gallery/corporate_gala.jpg"
+                src="/gallery/1.webp"
                 alt="Vintage 1920s party theme"
                 fill
                 sizes="128px"
@@ -225,7 +225,7 @@ export function Hero() {
             </div>
             <div className="w-32 h-24 relative overflow-hidden border border-neutral-200">
               <Image
-                src="/gallery/corporate_gala.jpg"
+                src="/gallery/3.webp"
                 alt="Corporate celebration"
                 fill
                 sizes="128px"
