@@ -6,7 +6,7 @@ import { Camera, Aperture, Sparkle } from "@phosphor-icons/react";
 
 const PHOTO_ITEMS = [
   {
-    src: "/gallery/1.webp",
+    src: "/gallery/1 (1).webp",
     alt: "Sweet 17th Birthday",
     title: "Anya's Sweet 17th Party",
     tag: "Birthday",
@@ -20,7 +20,7 @@ const PHOTO_ITEMS = [
     rotate: 3,
   },
   {
-    src: "/gallery/3.webp",
+    src: "/gallery/3 (1).webp",
     alt: "Annual Gathering",
     title: "Mandiri Annual Gathering",
     tag: "Corporate",
