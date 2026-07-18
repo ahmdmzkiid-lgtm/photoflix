@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://photoflix.id/sitemap.xml
+Sitemap: https://photoflix.my.id/sitemap.xml
